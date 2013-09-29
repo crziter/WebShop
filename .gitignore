@@ -1,7 +1,12 @@
-./Web/*.suo
-./Web/*.sln.docstates
-./Web/packages/*
-./Web/Web/*.user
+Web/*.suo
+Web/*.sln.docstates
+Web/packages/
+Web/Web/*.user
+Web/Web/obj/
+Web/Web/App_Data/
+Web/Web/bin/*.pdb
+Web/Web/bin/Web.dll
 
-./Web/Web/obj/*
-./Web/Web/bin/*.pdb
+App/*.suo
+App/App/bin/
+App/App/obj/
