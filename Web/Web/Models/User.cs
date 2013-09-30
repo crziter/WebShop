@@ -28,6 +28,7 @@ namespace Web.Models
         [StringLength(70), Required]
         public string Email { get; set; }
 
+        [Required]
         public int RoleId { get; set; }
 
         public virtual Role Role { get; set; }

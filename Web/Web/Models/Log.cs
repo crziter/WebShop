@@ -9,11 +9,16 @@ namespace Web.Models
 {
     public class Log
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Key, Required, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
+
+        [Required]
         public int UserId { get; set; }
+
+        [Required]
         public DateTime Time { get; set; }
+
+        [Required]
         public string Message { get; set; }
 
         public virtual User User { get; set; }

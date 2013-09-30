@@ -7,19 +7,14 @@ using System.Web;
 
 namespace Web.Models
 {
-    public class Role
+    [Table("Categories")]
+    public class Category
     {
-        public Role()
-        {
-            Users = new HashSet<User>();
-        }
-
-        [Key, Required, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Required]
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
-        [Required, StringLength(30)]
+        [Required]
         public string Name { get; set; }
-
-        public virtual ICollection<User> Users { get; set; }
     }
 }
